@@ -20,3 +20,7 @@ let mapleader=" "
 # https://blog.mozhu.info/vimmers-you-dont-need-nerdtree-18f627b561c3#.3qejixiku
 let g:netrw_liststyle=3
 map <leader>k :E<cr>
+
+# Basic status line
+set laststatus=2
+set statusline=\ %f%m%r%h%w\ %=%({%{&ff}\|%{(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\")}%k\|%Y}%)\ %([%l,%v][%p%%]\ %)
